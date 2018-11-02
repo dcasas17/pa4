@@ -86,4 +86,37 @@ boolean boxTestEx2 = true;
 boolean boxTest3 = inBox(readLine(path, 31), 25.523, -150.236, 20.365, -98.012);
 boolean boxTestEx3 = false;
 
-/* boolean eventOfType = 
+boolean eventOfType(String row, String event){
+  return stringEquals(dataAtColumn(row, typeColIndex), event);
+}
+
+boolean eventTest = eventOfType(readLine(path, 34), "FARMERS");
+boolean eventTestEx = true
+boolean eventTest2 = eventOfType(readLine(path, 57), "ATHLETIC");
+boolean eventTestEx2 = true
+boolean eventTest3 = eventOfType(readLine(path, 64), "CONCERTS");
+boolean eventTestEx3 = false
+
+boolean hasNumAttend(String row){
+  return length(dataAtColumn(row, attendColIndex)) > 0;
+}
+
+boolean boxTest = hasNumAttend(readLine(path, 13));
+boolean boxTestEx = true;
+boolean boxTest2 = hasNumAttend(readLine(path, 27));
+boolean boxTestEx2 = true;
+boolean boxTest3 = hasNumAttend(readLine(path, 54));
+boolean boxTestEx3 = true;
+
+
+String events = readFile(path);
+String conCoords = filter(filter(events, r -> hasLat(r)), r -> hasLong(r));
+String concerts = filter(conCoords, r -> eventOfType(r, "CONCERTS"));
+int numConcertRows = numRows(concerts)-1;
+/* boolean drawMyTable = drawGeoTable(concerts, 20); */
+double easternmostConcert = -117.1301472;
+
+String athCoords = filter(filter(events, r -> hasLat(r)), r -> hasLong(r));
+String athletics = filter(athCoords, r -> eventOfType(r, "ATHLETIC"));
+int numAthRows = numRows(athletics)-1;
+boolean drawTable = drawGeoTable(athletics, 40);

@@ -1,0 +1,59 @@
+PARTNER
+cse8afanr
+cse8afata
+
+hasLat examples
+input Curbside Bites Food Truck Markets - Downtown Lunch,49831,FARMERS,2018-12-19 11:00,2018-12-19 14:00,300,30,Curbside Bites,www.curbsidebites.com,B & India Streets,32.715738,-117.1610838
+output: true
+input: Little Italy's Wednesday Farmers Market,50929,FARMERS,2018-12-19 9:00,2018-12-19 13:00,1200,80,Little Italy Association of San Diego,www.littleitalymercato.com,Date & State Streets,,
+output: false
+input:Sunday Artisan Market,50587,FARMERS,2018-12-23 10:00,2018-12-23 15:00,3000,20,Gaslamp Quarter Association,www.gaslamp.org,5th Avenue & Market Street,32.7313918,-117.1602848
+output: true
+
+hasLong examples
+input: The Mercato Little Italy's Farmers' Market,50028,FARMERS,2018-12-29 8:00,2018-12-29 14:00,1500,400,Little Italy Association of San Diego,www.littleitalymercato.com,Cedar & Front Streets,32.7219778,-117.1615697
+output: true
+input: City Heights Farmer's Market (Every Saturday),50129,FARMERS,2018-12-22 9:00,2018-12-22 13:00,500,100,San Diego County Farm Bureau,www.sdfarmbureau.org,Wightman & 43rd Streets,32.7477532,-117.0999832
+output: true
+input: Ocean Beach Certified Farmer's Market (Wednesdays),50211,FARMERS,2018-12-19 16:00,2018-12-19 20:00,1200,60,Ocean Beach Merchant's Association,www.oceanbeachsandiego.com,Newport Avenue & Bacon Street,32.7431327,-117.2449981
+output: false
+
+isNorthOf examples
+input: Sunday Artisan Market,50587,FARMERS,2018-12-23 10:00,2018-12-23 15:00,3000,20,Gaslamp Quarter Association,www.gaslamp.org,5th Avenue & Market Street,32.7313918,-117.1602848 , 30.6
+output: true
+input: Old Town Artisan's Market,50422,FARMERS,2018-12-23 9:00,2018-12-23 16:30,1000,100,Old Town San Diego Chamber of Commerce,,Harney Street & San Diego Avenue,32.7527792,-117.1949018 , 100.0
+output: false
+input: Curbside Bites Food Truck Markets - Downtown Lunch,49831,FARMERS,2018-12-19 11:00,2018-12-19 14:00,300,30,Curbside Bites,www.curbsidebites.com,B & India Streets,32.715738,-117.1610838 , 25.0
+output: false
+
+isSouthOf examples
+input: 2018 Hillcrest Farmers' Market (Sundays),49951,FARMERS,2018-12-16 9:00,2018-12-16 14:00,2000,400,Hillcrest Business Association,www.hillcrestfarmersmarket.com,3690 Normal Street,32.7485423,-117.149901 , 35.0
+output: true
+input: Old Town Artisan's Market,50420,FARMERS,2018-12-16 9:00,2018-12-16 16:30,1000,100,Old Town San Diego Chamber of Commerce,,Harney Street & San Diego Avenue,32.7527792,-117.1949018 , 30.0
+output: false
+input: Hillcrest Car Show,50154,FESTIVAL,2018-12-15 14:00,2018-12-15 18:00,250,20,Hillcrest Business Association,www.fabuloushillcrest.com,Normal & Harvey Milk Streets,32.7521124,-117.1481502 , 29.0
+output: false
+
+isEastOf examples
+input:  Holiday Bowl 5K,51284,ATHLETIC,2018-12-31 8:00,2018-12-31 11:00,1000,100,KOZ Events,www.kozenterprises.com,Harbor Dr.& Ash St,, , -117.0
+output: true
+input:Sunday Artisan Market,50588,FARMERS,2018-12-30 10:00,2018-12-30 15:00,3000,20,Gaslamp Quarter Association,www.gaslamp.org,5th Avenue & Market Street,32.7313918,-117.1602848 , -120.0
+output: false
+input: 2018 Hillcrest Farmers' Market (Sundays),49953,FARMERS,2018-12-30 9:00,2018-12-30 14:00,2000,400,Hillcrest Business Association,www.hillcrestfarmersmarket.com,3690 Normal Street,32.7485423,-117.149901 , -116.0
+output: false
+
+isWestOf examples
+input: 2018 Hillcrest Farmers' Market (Sundays),49953,FARMERS,2018-12-30 9:00,2018-12-30 14:00,2000,400,Hillcrest Business Association,www.hillcrestfarmersmarket.com,3690 Normal Street,32.7485423,-117.149901 , -117.0
+output: true
+input:Old Town Artisan's Market,50424,FARMERS,2018-12-30 9:00,2018-12-30 16:30,1000,100,Old Town San Diego Chamber of Commerce,,Harney Street & San Diego Avenue,32.7527792,-117.1949018 , -120.0
+output: false
+input: Old Town Artisan's Market,50423,FARMERS,2018-12-29 9:00,2018-12-29 16:30,1000,100,Old Town San Diego Chamber of Commerce,,Harney Street & San Diego Avenue,32.7527792,-117.1949018 , -116.0
+output: true
+
+inBox examples
+input:City Heights Farmer's Market (Every Saturday),50130,FARMERS,2018-12-29 9:00,2018-12-29 13:00,500,100,San Diego County Farm Bureau,www.sdfarmbureau.org,Wightman & 43rd Streets,32.7477532,-117.0999832 , 20.568, -140.748, 40.23, -110.43
+output: true
+input:Old Town Artisan's Market,50420,FARMERS,2018-12-16 9:00,2018-12-16 16:30,1000,100,Old Town San Diego Chamber of Commerce,,Harney Street & San Diego Avenue,32.7527792,-117.1949018 , 10.344, -130.324, 45.242, -100.324
+output: true
+input: SD Hmong Community New Year Celebration (2-Day),51312,FESTIVAL,2018-12-16 8:00,2018-12-16 18:00,1500,100,Lao Hmong Family Association,www.lhfasd.org,3170 Armstrong St,32.8019805,-117.1656894 , 25.523, -150.236, 20.365, -98.012
+output: false
