@@ -57,3 +57,19 @@ input:Old Town Artisan's Market,50420,FARMERS,2018-12-16 9:00,2018-12-16 16:30,1
 output: true
 input: SD Hmong Community New Year Celebration (2-Day),51312,FESTIVAL,2018-12-16 8:00,2018-12-16 18:00,1500,100,Lao Hmong Family Association,www.lhfasd.org,3170 Armstrong St,32.8019805,-117.1656894 , 25.523, -150.236, 20.365, -98.012
 output: false
+
+eventOfType examples
+input: Old Town Artisan's Market,50419,FARMERS,2018-12-15 9:00,2018-12-15 16:30,1000,100,Old Town San Diego Chamber of Commerce,,Harney Street & San Diego Avenue,32.7527792,-117.1949018
+output: true
+input: 26h Annual Jingle Bell Run,50898,ATHLETIC,2018-12-08 6:00,2018-12-08 11:00,2000,100,Arthritis Foundation,www.sdjbr.org,Balboa Drive & Quince Street,32.7326435,-117.1580791
+output: true
+input: Little Italy's Wednesday Farmers Market,50927,FARMERS,2018-12-05 9:00,2018-12-05 13:00,1200,80,Little Italy Association of San Diego,www.littleitalymercato.com,Date & State Streets,,
+output: false
+
+hasNumAttend examples
+input: North Park Thursday Market,50078,FARMERS,2018-12-27 15:00,2018-12-27 19:30,900,70,North Park Main Street,www.northparkmarket.com,North Park Way & Granada Avenue,32.7474103,-117.1266214
+output: true
+input: Pacific Beach Tuesday Farmers' Market,50505,FARMERS,2018-12-18 14:00,2018-12-18 19:00,800,60,Discover PB,www.pacificbeachmarket.com,Bayard Street & Grand Avenue,32.7999983,-117.254587
+output: true
+input: City Heights Farmer's Market (Every Saturday),50127,FARMERS,2018-12-08 9:00,2018-12-08 13:00,500,100,San Diego County Farm Bureau,www.sdfarmbureau.org,Wightman & 43rd Streets,32.7477532,-117.0999832
+output: true

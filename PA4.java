@@ -113,10 +113,17 @@ String events = readFile(path);
 String conCoords = filter(filter(events, r -> hasLat(r)), r -> hasLong(r));
 String concerts = filter(conCoords, r -> eventOfType(r, "CONCERTS"));
 int numConcertRows = numRows(concerts)-1;
-/* boolean drawMyTable = drawGeoTable(concerts, 20); */
+boolean drawMyTable = drawGeoTable(concerts, 20); */
 double easternmostConcert = -117.1301472;
 
-String athCoords = filter(filter(events, r -> hasLat(r)), r -> hasLong(r));
-String athletics = filter(athCoords, r -> eventOfType(r, "ATHLETIC"));
-int numAthRows = numRows(athletics)-1;
-boolean drawTable = drawGeoTable(athletics, 40);
+String athletics = filter(events, r -> eventOfType(r, "ATHLETIC"));
+String athCoords = filter(filter(athletics, r -> hasLat(r)), r -> hasLong(r));
+int numAthRows = numRows(athCoords)-1;
+boolean drawTable = drawGeoTable(athCoords, 40);
+String moreNorthAthletics = "more north than south";
+
+String festivals = filter(events, r -> eventOfType(r, "FESTIVAL"));
+String parkRows = filter(festivals, r-> inbox(r, 32.7189, -117.1593, 32.7409, --17.1338));
+int numParkRows = numRows(parkRows)-1;
+boolean drawTable2 = drawGeoTable(parkRows, 15);
+int medAtBalboaFestivals = 132;
